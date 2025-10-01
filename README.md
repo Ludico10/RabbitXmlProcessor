@@ -77,9 +77,13 @@ docker-compose up --build -d
 You can view container logs:
 
 ```
-docker logs -f fileparser
-docker logs -f dataprocessor
+docker logs -f rabbitxmlprocessor-fileparser-1
+docker logs -f rabbitxmlprocessor-dataprocessor-1
 ```
+
+They are also stored in files in containers:
+* */logs/fileparser.log*
+* */logs/dataprocessor.log*
 
 ---
 
