@@ -16,11 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{57F0AEFB-E250-43E5-850B-ED55A7A79D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Tests", "..\Shared.Tests\Shared.Tests.csproj", "{407FD1EB-DF23-415D-B97B-87C5D32FE629}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Tests", ".\tests\Shared.Tests\Shared.Tests.csproj", "{407FD1EB-DF23-415D-B97B-87C5D32FE629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParserService.Tests", "..\FileParserService.Tests\FileParserService.Tests.csproj", "{FC10F33F-0CCD-41F7-BD22-DD48D815A6F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParserService.Tests", ".\tests\FileParserService.Tests\FileParserService.Tests.csproj", "{FC10F33F-0CCD-41F7-BD22-DD48D815A6F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessorService.Tests", "..\DataProcessorService.Tests\DataProcessorService.Tests.csproj", "{038D4ACD-F19F-4E29-A038-63C5C153B771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessorService.Tests", ".\tests\DataProcessorService.Tests\DataProcessorService.Tests.csproj", "{038D4ACD-F19F-4E29-A038-63C5C153B771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
