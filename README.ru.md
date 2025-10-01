@@ -15,7 +15,7 @@
 
    ```
    git clone https://github.com/Ludico10/RabbitXmlProcessor.git
-   cd repo
+   cd RabbitXmlProcessor
    ```
 
 2. Соберите и запустите сервисы:
