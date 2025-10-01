@@ -16,7 +16,7 @@ The system consists of two services:
 1. Clone the repository:
 
 ```
-git clone https://github.com/username/repo.git
+git clone https://github.com/Ludico10/RabbitXmlProcessor.git
 cd repo
 ```
 
