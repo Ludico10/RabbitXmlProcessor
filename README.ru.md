@@ -14,7 +14,7 @@
 1. Склонируйте репозиторий:
 
    ```
-   git clone https://github.com/username/repo.git
+   git clone https://github.com/Ludico10/RabbitXmlProcessor.git
    cd repo
    ```
 
