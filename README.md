@@ -17,7 +17,7 @@ The system consists of two services:
 
 ```
 git clone https://github.com/Ludico10/RabbitXmlProcessor.git
-cd repo
+cd RabbitXmlProcessor
 ```
 
 2. Build and start the services:
