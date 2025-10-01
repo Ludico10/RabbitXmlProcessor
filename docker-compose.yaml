@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  dataprocessor:
+    build:
+      context: .
+      dockerfile: ./DataProcessorService/Dockerfile
+    depends_on:
+      - rabbitmq
+    environment:
+      - DOTNET_ENVIRONMENT=Production
+    volumes:
+      - ./DataProcessorService/appsettings.json:/app/appsettings.json
+      - ./DataProcessorService/db:/app/db
+    restart: unless-stopped
+
+  fileparser:
+    build:
+      context: .
+      dockerfile: ./FileParserService/Dockerfile
+    depends_on:
+      - rabbitmq
+    environment:
+      - DOTNET_ENVIRONMENT=Production
+    volumes:
+      - ./FileParserService/input:/app/input
+      - ./FileParserService/appsettings.json:/app/appsettings.json
+    restart: unless-stopped
