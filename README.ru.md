@@ -75,9 +75,13 @@
 Посмотреть логи контейнеров можно :
 
 ```
-docker logs -f fileparser
-docker logs -f dataprocessor
+docker logs -f rabbitxmlprocessor-fileparser-1
+docker logs -f rabbitxmlprocessor-dataprocessor-1
 ```
+
+Также они сохраняются в файлах в контейнерах:
+* */logs/fileparser.log*
+* */logs/dataprocessor.log*
 
 ---
 
